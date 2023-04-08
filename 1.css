@@ -8,10 +8,13 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(194, 255, 195);
+  background-color: whitesmoke;
+}
+h1{
+  font-size: 40px;
 }
 .intro{
-  margin: 4.5vh 0 18vh 0;
+  margin: 4.5vh 0 0vh 0;
   width: 30vw;
   height: 90vh;
   display: flex;
@@ -55,44 +58,4 @@ body{
 .student-number{
   margin: 2vh 0 0 0px;
   font-size: 18px;  
-}
-.mbti{
-  margin: 6vh 0 0 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.mbti h1{
-  margin: 0 0 8vh 0;
-  font-size: 40px;
-}
-.mbti-1, .mbti-2, .mbti-3, .mbti-4{
-  margin: 0 0vw 0 3vw;
-  width: 11vw;
-  height: 11vw;
-  display: inline-block;
-  color: rgb(0, 0, 0) ;
-  font-size: 50px;
-  font-weight: 900;
-  text-align: center;
-  line-height: 11vw;
-  position: relative;
-  top: 10vh;
-  left: 12vw;
-  background-color: rgb(255, 255, 255);
-}
-.mystery{
-  width: 76.9vw;
-  height: 50vh;
-  box-shadow: 0px -4px 5px black;
-  position: relative;
-  bottom: 27vh;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.621)),  url(/img/closed\ curtain.jpg);
-}
-
-.mystery:active{
-  width: 85vw;
-  box-shadow: none;
-  background-image: url(/img/opened\ curtain.png);
 }

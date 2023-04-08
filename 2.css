@@ -1,0 +1,107 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  padding: 20vh 5vw 0 5vw;
+  background-color: rgb(249, 249, 249);
+}
+h1{
+  color: orangered;
+  font-size: 40px;
+}
+.mbti, .hobby, .color{
+  margin: 6vh 0 10vh 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* ------------------------------------------------------------------------- */
+.mbti h1{
+  margin: 0 0 8vh 0;
+}
+.mbti h1::after{
+  content: "";
+  width: 15vw;
+  height: 1vh;
+  border-bottom: 3px solid black;
+}
+.mbti-box{
+  width: 60%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+}
+.mbti-box:active span{
+  color: orangered;
+}
+.mbti-1, .mbti-2, .mbti-3, .mbti-4{
+  margin: 0 0vw  1vw;
+  width: 15vw;
+  height: 15vw;
+  display: inline-block;
+  color: rgb(249, 249, 249);
+  font-size: 80px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 15vw;
+  border: 2px solid rgb(173, 173, 173);
+}
+.mbti-1:hover, .mbti-2:hover, .mbti-3:hover, .mbti-4:hover{
+  color: orangered;
+  background-color: rgb(255, 246, 215);
+}
+/* -------------------------------------------------------------------------- */
+  .hobby-box{
+margin: 5vh 0 10vh 0;
+width: 80%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+}
+.h-img{
+margin: 1vw 1vw 1vw 1vw;
+width: 16vw;
+transition-duration: 0.5s;
+}
+.h-img:active{
+  width: 25vw;
+}
+/* -------------------------------------------------------------- */
+.color-box{
+  margin: 5vh 0 10vh 0;
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.c-1, .c-2, .c-3, .c-4, .c-5, .c-6{
+  margin: 1vw 1vw 1vw 1vw;
+  width: 16vw;
+  height: 16vw;
+}
+.c-1{
+  background: linear-gradient(to right, red, rgb(255, 191, 0));
+  transition-duration: 0.8s;
+}
+.c-1:active{
+  width: 28vw;
+}
+.c-2{
+background-color:rgb(170, 214, 214) ;
+}
+.c-3{
+  background-color: #80a0ec;
+}
+.c-4{
+  background-color: #aeff52;
+}
+.c-5{
+  background-color: #69b315;
+}
+.c-6{
+  background-color: rgb(3, 93, 3);
+}
