@@ -4,11 +4,14 @@
 }
 body{
   width: 100%;
-  height: 1200px;
+  height: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(194, 255, 195);
 }
 .intro{
+  margin: 4.5vh 0 20vh 0;
   width: 30vw;
   height: 90vh;
   display: flex;
@@ -35,18 +38,32 @@ body{
   background-color: aqua;
 }
 .me{
+  margin: 5vh 0 0 0;
   width: 18vw;
   height: 50vh;
   background-color: blue;
 }
 .title{
-  margin:  2vh 0 0.5vh 0;
+  margin:  2vh 0 0vh 0;
   font-size: 17px;
 }
 .name-age{
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 900;
 }
 .student-number{
   margin: 2vh 0 0 0px;
+  font-size: 18px;  
+}
+.mbti h1{
+  margin: 0 0 5vh 0;
+}
+.mbti-1, .mbti-2, .mbti-3, .mbti-4{
+  width: 11vw;
+  height: 11vw;
+  display: inline-block;
+  font-size: 45px;
+  text-align: center;
+  line-height: 11vw;
+  background-color: aqua;
 }
