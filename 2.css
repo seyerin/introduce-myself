@@ -6,6 +6,14 @@ body{
   padding: 20vh 5vw 0 5vw;
   background-color: rgb(249, 249, 249);
 }
+body::-webkit-scrollbar{
+  width: 0.7vw;
+  background-color: rgb(255, 228, 206);
+}
+body::-webkit-scrollbar-thumb{
+  border-radius: 100px;
+  background-color: orangered;
+}
 h1{
   color: orangered;
   font-size: 40px;
@@ -20,7 +28,7 @@ h1{
 /* ------------------------------------------------------------------------- */
 @font-face {
   font-family: 'font-2';
-  src: url("/img/GetboregTrialOnly-2OZo3.ttf") format('truetype');
+  src: url("/font/GetboregTrialOnly-2OZo3.ttf") format('truetype');
 }
 .mbti h1{
   margin: 0 0 8vh 0;
@@ -63,7 +71,7 @@ h1{
   font-weight: 900;
   text-align: center;
   line-height: 15vw;
-  border: 2px solid rgb(173, 173, 173);
+  border: 2px solid rgb(255, 179, 151);
 }
 .mbti-2, .mbti-3, .mbti-4{
   border-left: none;
