@@ -10,14 +10,18 @@ h1{
   color: orangered;
   font-size: 40px;
 }
-.mbti, .hobby, .color, .animal{
-  margin: 6vh 0 10vh 0;
+.mbti, .hobby, .color, .beside, .wish{
+  margin: 3vh 0 10vh 0;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 /* ------------------------------------------------------------------------- */
+@font-face {
+  font-family: 'font-2';
+  src: url("/img/GetboregTrialOnly-2OZo3.ttf") format('truetype');
+}
 .mbti h1{
   margin: 0 0 8vh 0;
 }
@@ -27,17 +31,17 @@ h1{
   display: block;
   border-bottom: 3px solid orangered;
   position: relative;
-  left: 7vw;
-  bottom: 3.4vh;
+  left: 7.9vw;
+  bottom: 3.8vh;
 }
-.mbti h1::before{
+.mbti h1::before, .hobby h1::before, .color h1::before, .beside h1::before, .wish h1::before{
   content: "";
   width: 5vw;
   display: block;
   border-bottom: 3px solid orangered;
   position: relative;
-  right: 5.6vw;
   top: 4.4vh;
+  right: 6.5vw;
 }
 .mbti-box{
   width: 60%;
@@ -49,6 +53,7 @@ h1{
   color: orangered;
 }
 .mbti-1, .mbti-2, .mbti-3, .mbti-4{
+  font-family: 'font-2';
   margin: 0 0vw  1vw;
   width: 15vw;
   height: 15vw;
@@ -82,29 +87,20 @@ flex-wrap: wrap;
   display: block;
   border-bottom: 3px solid orangered;
   position: relative;
-  left: 5.8vw;
-  bottom: 3.4vh;
-}
-.hobby h1::before{
-  content: "";
-  width: 5vw;
-  display: block;
-  border-bottom: 3px solid orangered;
-  position: relative;
-  right: 5.6vw;
-  top: 4.4vh;
+  left: 6.5vw;
+  bottom: 3.8vh;
 }
 .h-img{
 margin: 1vw 1vw 1vw 1vw;
 width: 15vw;
 transition-duration: 0.5s;
 }
-.h-img:active{
+.h-img:hover{
   width: 25vw;
 }
 /* -------------------------------------------------------------- */
 .color-box{
-  margin: 5vh 0 10vh 0;
+  margin: 5vh 0 12vh 0;
   width: 75%;
   display: flex;
   flex-direction: column;
@@ -117,17 +113,8 @@ transition-duration: 0.5s;
   display: block;
   border-bottom: 3px solid orangered;
   position: relative;
-  left: 14.7vw;
-  bottom: 3.4vh;
-}
-.color h1::before{
-  content: "";
-  width: 5vw;
-  display: block;
-  border-bottom: 3px solid orangered;
-  position: relative;
-  right: 5.6vw;
-  top: 4.4vh;
+  left: 15.5vw;
+  bottom: 3.8vh;
 }
 .c-1, .c-2{
   margin: 1vw 0vw 1vw 0vw;
@@ -142,29 +129,54 @@ transition-duration: 0.5s;
 background: linear-gradient(to right, rgb(0, 96, 29), rgb(217, 255, 0));
 transition-duration: 0.8s;
 }
-.c-1:active, .c-2:active{
+.c-1:hover, .c-2:hover{
   width: 30vw;
 }
 /* ---------------------------------------- */
-.animal h1::after{
+.beside h1::after{
   content: "";
   width: 5vw;
   display: block;
   border-bottom: 3px solid orangered;
   position: relative;
-  left: 17vw;
-  bottom: 3.4vh;
+  left: 22vw;
+  bottom: 3.8vh;
 }
-.animal h1::before{
+.beside img{
+  margin: 10vh 0.8vw 10vh 0.8vw;
+  width: 16vw;
+  height: 16vw;
+  transition-duration: 0.5s;
+}
+.beside img:hover{
+  width: 20vw;
+  height: 20vw;
+}
+/* ----------------------------------------------------------------------- */
+.wish{
+  margin: 20vh 0 0 0;
+}
+.wish-box{
+  margin: 8vh 0 29vh 0;
+  width: 80%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  /* box-shadow: 2px 13px 15px rgb(173, 173, 173); */
+  border: 2px solid orangered;
+}
+.wish h1::after{
   content: "";
   width: 5vw;
   display: block;
   border-bottom: 3px solid orangered;
   position: relative;
-  right: 5.6vw;
-  top: 4.4vh;
+  left: 15.5vw;
+  bottom: 3.8vh;
 }
-.animal img{
-  margin: 5vh 0 10vh 0;
-  width: 60vw;
+.wish p{
+  margin: 10vh 0 15vh 0;
+  line-height: 40px;
+  font-size: 25px;
+  font-weight: 500;
 }

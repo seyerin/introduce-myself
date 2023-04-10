@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'font';
+  src: url("/img/BMEuljiro10yearslater.ttf") format('truetype');
+}
 *{
   padding: 0;
   margin: 0;
@@ -6,56 +10,66 @@ body{
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: whitesmoke;
+  justify-content: center;
+  background-image: url(/img/bg.png);
 }
 h1{
   font-size: 40px;
 }
 .intro{
-  margin: 4.5vh 0 0vh 0;
-  width: 30vw;
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  box-shadow: 1px 13px 15px rgb(77, 77, 77);
-  background-color: rgb(255, 255, 255);
-}
-.background{
   width: 100%;
-  height: 13.8%;
-  background-color: lawngreen;
-}
-.intro-box{
-  width: 30vw;
-  height: 90vh;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  justify-content: center;
 }
-.logo{
-  margin: 3vh 0 5vh 0; 
-  width: 15vw;
-  height: 3vw;
-  background-color: aqua;
+.wanted{
+  margin: 4.5vh 0 0vh 28vw;
+  width: 33vw;
+  height: 90vh;
 }
-.me{
-  margin: 5vh 0 0 0;
-  width: 18vw;
-  height: 50vh;
-  background-color: blue;
+.info{
+  width: 23vw;
+  height: 28vw;
+  position: relative;
+  top: 22vh;
+  left: 2vw;
+  box-shadow: 1px 13px 15px rgb(38, 17, 3);
+  background-image: url(/img/paper\ texture.jpg);
 }
-.title{
-  margin:  2vh 0 0vh 0;
-  font-size: 17px;
+.tack{
+  width: 1.6vw;
+  height: 1.6vw;
+  border-radius: 100%;
+  box-shadow: 1px 5px 5px rgb(58, 58, 58);
+  position: relative;
+  top: 24vh;
+  right: 22vw;
+  background-color: rgba(240, 248, 255, 0);
 }
-.name-age{
-  font-size: 30px;
+.tack-2{
+  width: 1.6vw;
+  height: 1.6vw;
+  border-radius: 100%;
+  box-shadow: 1px 5px 5px rgb(58, 58, 58);
+  position: relative;
+  top: 24vh;
+  right: 2.5vw;
+  background-color: rgba(240, 248, 255, 0);
+}
+.information{
+  font-family: 'font';
+  margin: 6vh 0 1vh 0;
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+}
+.name, .age, .job, .student-number, .wish, .track{
+  font-family: 'font';
+  margin: 2.5vh 0 0 2vw;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 30px;
+}
+.info span{
+  font-size: 27px;
   font-weight: 900;
-}
-.student-number{
-  margin: 2vh 0 0 0px;
-  font-size: 18px;  
 }
